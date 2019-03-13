@@ -6,13 +6,13 @@ def run_guessing_game
     puts "Guess a number between 1 and 6:"
     guess = gets.chomp
     if guess == number
-      puts "You guessed correct: #{guess}!"
+      puts "You guessed the correct number!"
       puts "Let's go again!"
     elsif guess.downcase() == "exit"
-      puts "Exiting game..."
+      puts "Goodbye!"
       loop_continue = false
     else
-      puts "You guessed incorrect. The number was: #{number}. "
+      puts "The computer guessed #{number}. "
     end
   end
 end
