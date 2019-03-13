@@ -6,8 +6,9 @@ def run_guessing_game
     puts "Guess a number between 1 and 6:"
     guess = gets.chomp
     if guess == number
-      puts "You guessed correct"
+      puts "You guessed correct: #{guess}!"
       loop_continue = false
+      if guess.downcase() == "exit"
     else
       puts "You guessed incorrect. The number was: #{number}. "
     end
