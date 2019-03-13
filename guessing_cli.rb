@@ -12,4 +12,5 @@ def run_guessing_game
       puts "You guessed incorrect. The number was: #{number}. "
     end
   end
+  binding.pry
 end
