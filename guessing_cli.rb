@@ -7,8 +7,9 @@ def run_guessing_game
     guess = gets.chomp
     if guess == number
       puts "You guessed correct: #{guess}!"
+    elsif guess.downcase() == "exit"
+      puts "Exiting game..."
       loop_continue = false
-      if guess.downcase() == "exit"
     else
       puts "You guessed incorrect. The number was: #{number}. "
     end
